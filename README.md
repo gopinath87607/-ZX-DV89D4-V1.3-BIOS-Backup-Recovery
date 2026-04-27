@@ -27,7 +27,7 @@ ZX-DV89D4-BIOS/
 ├── LICENSE                 ← License (MIT or CC0)
 │
 ├── bios/
-│   └── bios_backup.rom     ← BIOS backup file (find this in the repo)
+│   └── bios_backup (Copy).rom    ← BIOS backup file (find this in the repo)
 │
 ├── checksum/
 │   └── checksums.txt       ← MD5 / SHA256 hashes
