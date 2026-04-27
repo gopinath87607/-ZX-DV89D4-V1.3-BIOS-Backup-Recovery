@@ -27,7 +27,7 @@ ZX-DV89D4-BIOS/
 ├── LICENSE                 ← License (MIT or CC0)
 │
 ├── bios/
-│   └── ZX-DV89D4_V1.3.bin ← BIOS binary file
+│   └── bios_backup.rom     ← BIOS backup file (find this in the repo)
 │
 ├── checksum/
 │   └── checksums.txt       ← MD5 / SHA256 hashes
@@ -90,10 +90,12 @@ Clip the SOIC8 test clip onto the chip.
 
 ### Step 4 — Load the BIOS File
 1. Click **File → Open**
-2. Select `bios/ZX-DV89D4_V1.3.bin`
+2. Find and select `bios_backup.rom` from the `bios/` folder in this repository
 3. Confirm the file size matches your chip:
    - `8MB = 8,388,608 bytes`
    - `16MB = 16,777,216 bytes`
+
+> 📁 **Where to find the file:** Go to the `bios/` folder in this repository → click `bios_backup.rom` → click **Download raw file** to save it to your PC.
 
 ---
 
@@ -124,10 +126,10 @@ Before flashing, verify the file integrity:
 
 ```bash
 # On Windows (PowerShell)
-Get-FileHash .\bios\ZX-DV89D4_V1.3.bin -Algorithm MD5
+Get-FileHash .\bios\bios_backup.rom -Algorithm MD5
 
 # On Linux / macOS
-md5sum bios/ZX-DV89D4_V1.3.bin
+md5sum bios/bios_backup.rom
 ```
 
 Compare the output with the hashes in `checksum/checksums.txt`.
@@ -154,17 +156,17 @@ Compare the output with the hashes in `checksum/checksums.txt`.
 MD5:    [insert md5 hash here]
 SHA256: [insert sha256 hash here]
 SIZE:   [insert byte size here]
-FILE:   ZX-DV89D4_V1.3.bin
+FILE:   bios_backup.rom
 ```
 
 ---
 
-## 🔗 Useful Links
+## 🔗 Useful Resources
 
-- [NEO Programmer Download](#) — *(add link)*
-- [CH341A Voltage Mod Guide](https://www.badcaps.net/forum/) — Badcaps Forums
-- [SOP8 Chip Datasheet lookup](https://www.alldatasheet.com/)
-- [Elektroda BIOS Forum](https://www.elektroda.pl/)
+- **NEO Programmer** — search by name to download the software
+- **Badcaps Forums** — search for CH341A voltage mod guide
+- **All Datasheet** — search your chip model to find the datasheet
+- **Elektroda** — large electronics repair forum with BIOS section
 
 ---
 
